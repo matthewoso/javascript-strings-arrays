@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 1</title>
+</head>
+<body>
+	<script>
+		var input = "30,40,10,12,22,40";
+
+		var average = 0;
+
+		// write a program to console.log the AVERAGE of the numbers in the string input
+		// hint: use the `split` function
+		// hint: make sure your program works no matter how many or what numbers are in the input string
+
+		var numbers = input.split(",");
+		console.log(numbers);
+
+		var total = 0; 
+
+		for (var i = 0; i < numbers.length; i++) 
+			{
+				// console.log(numbers,i,numbers[i],numbers[0]);
+				total += parseInt(numbers[i]);
+			}
+		
+		console.log(total); 
+
+		average = total / numbers.length;
+
+		console.log(average);
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 3</title>
+</head>
+<body>
+	<script>
+		var input = "a man, a plan, a canal, panama!";
+		var words = input.split(" ");
+			// console.log(words);
+			var wordsC = [];
+
+		for (var i = 0; i < words.length; i++) 
+				{
+					var letters = words[i].split("");
+					letters[0] = letters[0].toUpperCase("");
+					wordsC.push(letters.join(""));
+				}
+
+
+			console.log(wordsC.join(" "));
+
+		// write a program to console.log input in title case
+		// hint: use `split`, `join`, and `toUpperCase`
+
+	</script>
+</body>
+</html>
